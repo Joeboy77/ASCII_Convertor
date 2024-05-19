@@ -1,4 +1,4 @@
-/* Apply a background color and set default font properties */
+
 body {
     background-color: #f0f4f8;
     font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@ body {
     height: 100vh;
 }
 
-/* Style the marquee */
+
 .marq {
     font-size: 2em;
     color: #ffffff;
@@ -22,7 +22,7 @@ body {
     text-align: center;
 }
 
-/* Style the main container */
+
 .main {
     background-color: #ffffff;
     border-radius: 10px;
@@ -32,12 +32,12 @@ body {
     text-align: center;
 }
 
-/* Style the label */
+
 label {
     font-weight: bold;
 }
 
-/* Style the input field */
+
 input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -47,7 +47,7 @@ input[type="text"] {
     border-radius: 5px;
 }
 
-/* Style the button */
+
 button {
     background-color: #4CAF50;
     color: white;
@@ -63,7 +63,7 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Style the output heading and paragraph */
+
 h2 {
     margin-top: 20px;
     color: #4CAF50;
