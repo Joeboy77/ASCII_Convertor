@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>ASCII Converter</title>
+</head>
+<body>
+    <marquee class="marq">Word to ASCII Converter</marquee>
+    <div class="main">
+        <label for="inputWord">Enter a word or phrase:</label><br>
+        <input type="text" id="inputWord" placeholder="Type here...">
+        <button onclick="convertToASCII()">Convert</button>
+    
+        <h2>ASCII Codes:</h2>
+        <p id="asciiOutput"></p>
+    
+    </div>
+
+    <script>
+        function convertToASCII() {
+            const input = document.getElementById('inputWord').value;
+            let asciiCodes = '';
+
+            for (let i = 0; i < input.length; i++) {
+                asciiCodes += input.charCodeAt(i) + ' ';
+            }
+
+            document.getElementById('asciiOutput').textContent = asciiCodes.trim();
+        }
+    </script>
+</body>
+</html>

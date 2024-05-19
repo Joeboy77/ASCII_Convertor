@@ -1,0 +1,80 @@
+/* Apply a background color and set default font properties */
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style the marquee */
+.marq {
+    font-size: 2em;
+    color: #ffffff;
+    background-color: #4CAF50;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Style the main container */
+.main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Style the label */
+label {
+    font-weight: bold;
+}
+
+/* Style the input field */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style the output heading and paragraph */
+h2 {
+    margin-top: 20px;
+    color: #4CAF50;
+}
+
+#asciiOutput {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
