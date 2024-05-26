@@ -1,4 +1,3 @@
-
 body {
     background-color: #f0f4f8;
     font-family: Arial, sans-serif;
@@ -9,9 +8,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
-
 
 .marq {
     font-size: 2em;
@@ -22,21 +20,19 @@ body {
     text-align: center;
 }
 
-
 .main {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    max-width: 90%;
     width: 300px;
     text-align: center;
 }
 
-
 label {
     font-weight: bold;
 }
-
 
 input[type="text"] {
     width: 100%;
@@ -46,7 +42,6 @@ input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 
 button {
     background-color: #4CAF50;
@@ -63,7 +58,6 @@ button:hover {
     background-color: #45a049;
 }
 
-
 h2 {
     margin-top: 20px;
     color: #4CAF50;
@@ -77,4 +71,23 @@ h2 {
     margin-top: 10px;
     word-wrap: break-word;
     white-space: pre-wrap;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .main {
+        width: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main {
+        width: 600px;
+    }
 }
