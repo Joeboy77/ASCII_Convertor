@@ -12,10 +12,10 @@
         <label for="inputWord">Enter a word or phrase:</label><br>
         <input type="text" id="inputWord" placeholder="Type here...">
         <button onclick="convertToASCII()">Convert</button>
-    
+        <button onclick="clearOutput()">Clear</button>
+
         <h2>ASCII Codes:</h2>
         <p id="asciiOutput"></p>
-    
     </div>
 
     <!-- Functionality -->
@@ -30,6 +30,17 @@
 
             document.getElementById('asciiOutput').textContent = asciiCodes.trim();
         }
+
+        function clearOutput() {
+            document.getElementById('asciiOutput').textContent = '';
+            document.getElementById('inputWord').value = '';
+        }
+
+        document.getElementById('inputWord').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                convertToASCII();
+            }
+        });
     </script>
 </body>
 </html>
